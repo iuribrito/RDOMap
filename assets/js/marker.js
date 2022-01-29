@@ -168,7 +168,8 @@ class Marker {
   }
   get isCurrent() {
     // Cycles might serve numbers instead of strings
-    return this.cycleName == Cycles.categories[this.category];
+    // return this.cycleName == Cycles.categories[this.category];
+    return true;
   }
   get isVisible() {
     if (!getParameterByName('q')) {
